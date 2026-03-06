@@ -1,0 +1,9 @@
+import math
+
+x_min = float(input("Nhap so do goc (phut): "))
+x_deg = x_min / 60
+x_rad = x_deg * math.pi / 180
+
+goc = int(x_deg // 90) + 1
+print("x thuoc goc vuong thu", goc)
+print("cos(x) =", math.cos(x_rad))
