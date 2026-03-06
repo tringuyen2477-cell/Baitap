@@ -1,0 +1,13 @@
+day, month, year = map(int, input("Nhap ngay thang nam: ").split())
+
+# tính ngày trong năm
+sum_day = int(30.42*(month-1)) + day
+
+# chỉnh lại theo công thức
+if month == 2 or month > 2:
+    sum_day += 1
+
+if 2 < month < 8:
+    sum_day -= 1
+
+print("Ngay thu:", sum_day)
